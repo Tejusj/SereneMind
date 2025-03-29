@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>SereneMind Chat</title>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <h1 class="logo">SereneMind</h1>
+            <div class="nav-links">
+                <a href="homepage.html" class="nav-link">Home</a>
+                <a href="chat.html" class="nav-link active">Chat</a>
+                <button id="logout-button" class="action-button">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>SereneMind Chat</h1>
+                <div class="chat-actions">
+                    <button id="restart-chat-button" class="action-button">Restart Chat</button>
+                </div>
+            </div>
+            <p class="subtitle"><em>A safe space to talk about your feelings</em></p>
+        </header>
+
+        <div id="chat-container">
+            <div class="message bot-message">
+                Hello, I'm here to listen. How are you feeling today?
+            </div>
+            <div class="typing-indicator" id="typing">Therapist is typing...</div>
+        </div>
+
+        <div id="input-area">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Type your message here..."
+                autocomplete="off"
+            />
+            <button id="send-button">Send</button>
+        </div>
+
+        <div id="account-actions">
+            <button id="delete-account-button" class="danger-button">Delete My Account</button>
+        </div>
+
+        <div class="disclaimer">
+            <p>
+                <strong>Note:</strong> This is an experimental tool. It is not a replacement for professional mental health care. 
+                Your conversations are saved locally for your reference only.
+            </p>
+        </div>
+    </div>
+
+    <!-- Restart Chat Confirmation Modal -->
+    <div id="restart-modal" class="modal">
+        <div class="modal-content">
+            <h3>Restart Chat</h3>
+            <p>Are you sure you want to restart the chat? This will clear your current conversation.</p>
+            <div class="modal-buttons">
+                <button id="confirm-restart" class="modal-button confirm">Yes, Restart</button>
+                <button id="cancel-restart" class="modal-button cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Account Confirmation Modal -->
+    <div id="delete-account-modal" class="modal">
+        <div class="modal-content">
+            <h3>Delete Account</h3>
+            <p>This will permanently delete your account and all chat history. Are you sure?</p>
+            <div class="modal-buttons">
+                <button id="confirm-delete" class="modal-button danger">Yes, Delete</button>
+                <button id="cancel-delete" class="modal-button cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

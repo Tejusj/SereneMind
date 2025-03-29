@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Admin Dashboard - SereneMind</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <h1 class="logo">SereneMind</h1>
+        <div class="nav-links">
+          <a href="homepage.html" class="nav-link">Home</a>
+          <a href="admin-dashboard.html" class="nav-link active">Dashboard</a>
+          <button id="admin-logout-button" class="action-button">Logout</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <header class="admin-header">
+        <h1>Admin Dashboard</h1>
+        <p class="subtitle">System overview and management</p>
+      </header>
+
+      <section class="admin-stats">
+        <div class="stat-card">
+          <h3>Total Users</h3>
+          <p id="total-users">Loading...</p>
+        </div>
+        <div class="stat-card">
+          <h3>Active Chats</h3>
+          <p id="active-chats">Loading...</p>
+        </div>
+        <div class="stat-card">
+          <h3>System Status</h3>
+          <p id="system-status">Loading...</p>
+        </div>
+      </section>
+
+      <section class="user-management">
+        <h2>User Management</h2>
+        <div class="user-list-container">
+          <table id="user-list">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Last Active</th>
+                <th>Chat Count</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Users will be loaded here -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="system-controls">
+        <h2>System Controls</h2>
+        <div class="control-panel">
+          <button id="refresh-data" class="admin-button">Refresh Data</button>
+          <button id="export-data" class="admin-button">Export All Data</button>
+          <button id="system-restart" class="admin-button warning">
+            Restart System
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Add these libraries for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

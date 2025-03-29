@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SereneMind - Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <h1 class="logo">SereneMind</h1>
+            <div class="nav-links">
+                <a href="homepage.html" class="nav-link">Home</a>
+                <a href="chat.html" class="nav-link">Chat</a>
+                <a href="index.html" class="nav-link">Login</a>
+                <a href="signup.html" class="nav-link active">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Create Your SereneMind Account</h1>
+        <p class="subtitle">Begin your journey to emotional well-being</p>
+        
+        <div class="form-container">
+            <div id="signup-error" class="error-message" style="display: none;"></div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Choose a username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password">
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password">
+            </div>
+            <button id="signup-button">Create Account</button>
+            <p class="form-footer">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
