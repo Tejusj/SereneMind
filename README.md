@@ -23,6 +23,6 @@ serene-mind-project/
 # To Change the model:
   1. Install all the files.
   2. Open the script.js.
-  3. In 275th line of code change the model name with the desired one installed on your ollama locally
+  3. In 280th line of code change the model name with the desired one installed on your ollama locally
   4. You can find the list of models installed in ollama by using the following code in the command prompt:  ollama ls
       
